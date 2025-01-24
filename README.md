@@ -1,4 +1,4 @@
-我用C++编写了开源项目https://github.com/antirez/smallchat.git
+我用C++修改了开源项目https://github.com/antirez/smallchat.git
 
 ## 修改
 
@@ -19,4 +19,15 @@ g++ -o chat-server cpp-smallchat-server.cpp chatlib.c
 ```
 
 报错，显示有几个函数没有定义。
+
+
+
+2，我在编写isValidMessage方法的时候突然想起传进来的msg就是一个字符串还是经过封装的数据，如果就是一个字符串的话，是什么时候解封装的呢？
+
+```
+bool isValidMessage(const char *msg)
+    {
+        return true; // 通过所有检查认为消息有效
+    }
+```
 
